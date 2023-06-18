@@ -1,0 +1,233 @@
+.logo{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+body{
+    font-family: "JetBrains Mono",monospace;
+    background-image: linear-gradient(rgb(227, 227, 235),rgb(222, 222, 231));
+    height: 100vh;
+    
+    
+}
+h1{
+    margin-top: -5px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5{
+    margin: 2px -10px;
+    padding: 0px;
+}
+.start{
+    padding-top: 0.5%;
+display: flex;
+justify-content: space-around;
+text-align: center;
+border-bottom: 0.5px solid rgb(238, 140, 140);
+}
+.start img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5%;
+}
+.name{
+    min-width: 10%;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 1%;
+  line-height: 10px;
+}
+.user_count{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #ededf5;
+    border: 0.1px dotted rgb(43, 9, 236);
+    padding: 4px 6px;
+    text-align: center;
+    top: -60%;
+    left: 25%;
+}
+.message.center{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    box-shadow: none;
+    font-family: 'Catamaran', sans-serif;
+}
+#all_users{
+    display: block;
+    text-align: center;
+    padding-top: 1%;
+    cursor: pointer;
+}
+#users_div{
+    position: absolute;
+    border-radius: 5px;
+   max-height: 200px;
+   width: 120px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #D6D6E7;
+    padding: 1% 0%;
+    right:2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+ 
+}
+#users_div::-webkit-scrollbar{
+    display: none;
+}
+
+    #users_div div{
+      text-align: start;
+    }
+    #users_div li{
+        color: #2009f5;
+    }
+
+    .container{
+    
+    border: 2px solid #000;
+    border-radius: 10px;
+    max-width: 60%;
+    margin: auto;
+    height: 70vh;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent; 
+  scrollbar-track-color: transparent; 
+
+
+}
+.container::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+  }
+  .container::-webkit-scrollbar-thumb {
+      background-color: transparent; /* Set the color of the scrollbar thumb */
+    }
+    #list{
+        scrollbar-width: thin; 
+        scrollbar-color: transparent transparent; 
+        scrollbar-track-color: transparent; 
+    }
+    #list::-webkit-scrollbar {
+        width: 6px; /* Set the width of the scrollbar */
+      }
+    .welcome-chat{
+    font-size: 20px;
+    color: #4a0fee;
+    display: block;
+    text-align: center;
+}
+
+.message{
+    max-width: 60%;
+padding: 5px 10px;
+ margin: 2px 5px;
+ word-wrap: break-word;
+ height: auto;
+ box-sizing: border-box;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.left{
+ float: left;
+ clear:both;
+ background-color: rgb(246, 250, 248);
+ border-radius: 0px 5px 5px 15px;
+
+}
+.right{
+    float:right;
+    clear:both;
+    background-color: rgb(182, 238, 233);
+    border-radius: 5px 0px 15px 5px;
+    color: #111111;
+}
+#send-container{
+    display: block;
+    margin: auto;
+   text-align: center;
+   max-width: 985px;
+   width: 100%;
+}
+#messageInp{
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(31, 30, 30);
+    background: rgb(252, 253, 253);
+    border-radius: 5px;
+    height: 32px;
+    padding-left: 5px;
+    font-size: 18px;
+    color: #0a0553;
+}
+
+
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 35px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+@media only screen and (max-width: 768px) {
+    .container{
+     max-width: 95%;
+    }
+    #users_div{
+        max-width: 100px;
+        right: 0%;
+    }
+    .all_users{
+        margin-left: -50px;
+    }
+    .name{
+        margin-left: -50px;
+    }
+}
+  

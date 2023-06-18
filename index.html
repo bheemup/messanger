@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/chat5.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="./img/chat5.png" alt="" />
+      <h1>Welcome to iDiscuss ChatApp</h1>
+    </nav>
+
+    <div class="container">
+      <div class="start">
+        <div class="welcome-chat">let`s chat</div>
+        <div class="name"> Hii
+          <span id="user_name">user</span>
+        </div>
+        <div id="all_users">
+          <img src="./img/user.png" alt="all_users_icon">
+          <span class="user_count">1</span>
+        </div>
+        <div></div>
+             <div id="users_div">
+              <h5>🔴 Live Users...</h5>
+                     <ol id="list">
+                      
+                     </ol>    
+             </div>
+      </div>
+      <div class="message center">Welcome buddy!</div>
+      
+    </div>
+    <div class="send">
+      <form action="#" id="send-container">
+        <input
+          placeholder="Write something..."
+          type="text"
+          name="messageInp"
+          id="messageInp"
+        />
+        <button class="btn" type="submit">send</button>
+      </form>
+    </div>
+
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="./js/client.js"></script>
+  </body>
+</html>
